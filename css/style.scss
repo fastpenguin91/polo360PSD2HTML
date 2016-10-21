@@ -1,3 +1,19 @@
-.nav li {
-    display: inline-block;
+.nav {
+    background: yellow;
+}
+
+.primary-nav {
+    width: 100%;
+    background: lightgreen;
+    display: table;
+    height: 109px;
+}
+
+.listItem {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo {
+    padding: 15px;
 }

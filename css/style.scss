@@ -1,3 +1,10 @@
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
 .nav-container {
     background: #fff;
     width: 100%;
@@ -20,9 +27,6 @@
     vertical-align: middle;
 }
 
-.listItem {
-}
-
 .logo {
     background: #ffffff;
     display: inline-block;
@@ -38,23 +42,29 @@
     padding-left: 8px;
 }
 
+.test {
+    height: 50px;
+    float: left;
+    width: 100%;
+    background: pink;
+}
+
 
 .bannerArea {
     background: url(../assets/glowgradient.png) no-repeat;
     height: 342px;
+    float: left;
     position: relative;
+    width: 100%;
 }
 
 .bannerImg {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
 }
-
-
-
 
 
 

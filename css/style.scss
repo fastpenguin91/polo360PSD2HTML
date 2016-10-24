@@ -1,3 +1,7 @@
+body {
+    font-size: 16px;
+}
+
 .clearfix:after {
     content: " ";
     display: block;
@@ -22,6 +26,11 @@
     height: 109px;
 }
 
+.parent-content-block {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
 .listItem {
     display: table-cell;
     vertical-align: middle;
@@ -42,17 +51,20 @@
     padding-left: 8px;
 }
 
-.test {
-    height: 50px;
-    float: left;
-    width: 100%;
-    background: pink;
+.primaryHeading {
+    text-align: center;
+}
+
+.primaryHeading__text {
+    font-weight: bold;
+    font-size: 2em;
 }
 
 
 .bannerArea {
     background: url(../assets/glowgradient.png) no-repeat;
-    height: 342px;
+    height: 350px;
+    margin-bottom: 10px;
     float: left;
     position: relative;
     width: 100%;
@@ -67,6 +79,123 @@
 }
 
 
+.content-block {
+    width: 27%;
+    margin-right: 3%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.content-block__title {
+    color: #11719e;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.content-block2__title {
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.content-block__caption {
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+
+.content-block__image {
+    margin-bottom: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.content-block__paragraph {
+    margin-bottom: 8px;
+}
+
+.content-block__btn {
+    padding: 30px 90px;
+    display: inline-block;
+    background: url(../assets/learnMoreBtnwText.png) no-repeat;
+}
+
+
+
+.content-block2__paragraph {
+    margin-bottom: 15px;
+}
+
+.common-border {
+    border-bottom: 1px dashed gray;
+}
+
+.subscribe_btn {
+    height: 90px;
+    width: 190px;
+    display: inline-block;
+    background: url(../assets/subscribeBTN.png) no-repeat;
+}
+
+.sendBTN {
+    height: 90px;
+    width: 190px;
+    display: inline-block;
+    background: url(../assets/sendItBTN.png) no-repeat;
+}
+
+.visitBlogBTN {
+    height: 90px;
+    width: 190px;
+    display: inline-block;
+    background: url(../assets/visitBlogBTN2.png) no-repeat;
+}
+
+.content-block__textField {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content-block2__img {
+    display: inline-block;
+}
+
+.content-block2__paragraph {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+.content-block2__div {
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+
+
+.footerSection {
+    background: #333333;
+    color: #999999;
+    padding: 10px 0px 20px 0px;
+}
+
+.preFooter {
+    height: 10px;
+    background: #4c4c4c;
+}
+
+.footerSection__anchor {
+    color: #999999;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 5px;
+    border-right: 1px solid #999999;
+}
 
 
 

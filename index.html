@@ -11,34 +11,41 @@
         
         <header class="nav-container">
             <img class="logo  logo--primary" src="assets/logo.png"/>
-            <ul class="nav  primary-nav  clearfix">
+
+            <div class="menuIcon" onclick="showHideMenu()">
+                <div class="menuIcon__bar"></div>
+                <div class="menuIcon__bar"></div>
+                <div class="menuIcon__bar"></div>
+            </div>
+
+            <ul id="topMenu" class="nav  primary-nav  clearfix">
                 <li class="listItem">
                     <div class="primary-nav--content">
-                        <p>HOME</p>
+                        <p class="primary-nav--content__main">HOME</p>
                         <p>Back to Home</p>
                     </div>
                 </li>
                 <li class="listItem">
                     <div class="primary-nav--content">
-                        <p>PRODUCTS</p>
-                        <p>What we have for you</p>
+                        <p class="primary-nav--content__main">PRODUCTS</p>
+                        <p>What we have</p>
                     </div>
                 </li>
                 <li class="listItem">
                     <div class="primary-nav--content">
-                        <p>SERVICES</p>
+                        <p class="primary-nav--content__main">SERVICES</p>
                         <p>Things we do</p>                        
                     </div>
                 </li>
                 <li class="listItem">
                     <div class="primary-nav--content">
-                        <p>BLOG</p>
+                        <p class="primary-nav--content__main">BLOG</p>
                         <p>Follow Our Updates</p>                        
                     </div>
                 </li>
                 <li class="listItem">
                     <div class="primary-nav--content">                    
-                        <p>CONTACT</p>
+                        <p class="primary-nav--content__main">CONTACT</p>
                         <p>Ways to reach us</p>
                     </div>
                 </li>
@@ -46,12 +53,12 @@
         </header>
 
 
-        <div class="bannerArea">
+        <div id="bannerArea" class="bannerArea">
             <img class="bannerImg" src="assets/bannerImg.jpg"/>
         </div>
 
-        <div class="primaryHeading">
-            <p class="primaryHeading__text">Lorem Ipsum dolor sit amet, consecetur adipisicing elit</p><br>
+        <div class="newSectionBreak  newSectionBreak--underBanner">
+            <p class="newSectionBreak__text">Lorem Ipsum dolor sit amet, consecetur adipisicing elit</p><br>
             <img src="assets/break.png"/>
         </div>
 
@@ -81,21 +88,22 @@
             </div>
         </div>
 
-        <div class="primaryHeading">
+        <div class="newSectionBreak">
             <img src="assets/break.png"/>
         </div>
 
 
         <div class="parent-block">
-            <div class="block">
+            <div class="block  connect__social">
                 <h3 class="block__title  block__title--connect  common-border">Social Connection</h3>
                 <p class="block__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                <img src="assets/rss.png"/>
-                <img src="assets/facebook.png" alt="facebook">
-                <img src="assets/linkedIn.png" alt="linked In">
-                <img src="assets/youtube.png" alt="youtube">
-                <img src="assets/twitter.png" alt="twitter">
-
+                <div class="connect__social__icons">
+                    <img src="assets/rss.png"/>
+                    <img src="assets/facebook.png" alt="facebook">
+                    <img src="assets/linkedIn.png" alt="linked In">
+                    <img src="assets/youtube.png" alt="youtube">
+                    <img src="assets/twitter.png" alt="twitter">
+                </div>
                 <h3 class="block__title  connect__title">Newsletter</h3>
 
                 <p class="block__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -105,15 +113,7 @@
                 <a class="btn-primary  btn--subscribe" href="#"></a>
             </div>
 
-            <div class="block">
-                <h3 class="block__title  block__title--connect  common-border">Contact</h3>
-                <input class="block__textField" type="text" placeholder="your name" />
-                <input class="block__textField" type="text" placeholder="your Email address" />
-                <textarea rows="7" class="block__textField" placeholder="message"></textarea>
-                <a class="btn-primary  btn--send" href="#"></a>
-            </div>
-
-            <div class="block">
+            <div class="block  connect__newsUpdates">
                 <h3 class="block__title  block__title--connect  common-border">News Updates</h3>
                 <div class="newsUpdates__container  common-border">                
                     <img class="newsUpdates__img" src="assets/newsUpdate1.png"/>
@@ -129,27 +129,65 @@
                 </div>    
                 <a class="btn-primary  btn--visitBlog" href="#"></a>
             </div>
+
+            <div class="block  connect__contact">
+                <h3 class="block__title  block__title--connect  common-border">Contact</h3>
+                <input class="block__textField" type="text" placeholder="your name" />
+                <input class="block__textField" type="text" placeholder="your Email address" />
+                <textarea rows="7" class="block__textField" placeholder="message"></textarea>
+                <a class="btn-primary  btn--send" href="#"></a>
+            </div>
+
+            <div style="clear: both;"></div>
         </div>
 
         <div class="preFooter"></div>
-        <footer class="footerSection">
-            <div style="display: inline-block;">
+        <footer class="footer">
+            <div class="footer__gen-info">
                 <p>Site Powered by WordPress. Developed by startupinacar.</p>
 
-                <a class="footerSection__anchor" href="#">Home</a>
-                <a class="footerSection__anchor" href="#">About</a>
-                <a class="footerSection__anchor" href="#">Products</a>
-                <a class="footerSection__anchor" href="#">Services</a>
-                <a class="footerSection__anchor" href="#">Contact</a> <br>
+                <a class="footer__anchor" href="#">Home</a>
+                <a class="footer__anchor" href="#">About</a>
+                <a class="footer__anchor" href="#">Products</a>
+                <a class="footer__anchor" href="#">Services</a>
+                <a class="footer__anchor" href="#">Contact</a> <br>
 
-                <a class="footerSection__anchor" href="#">Privacy Policy</a>
-                <a class="footerSection__anchor" href="#">Terms of Use</a>
+                <a class="footer__anchor" href="#">Privacy Policy</a>
+                <a class="footer__anchor" href="#">Terms of Use</a>
             </div>
 
-            <div style="display: inline-block; float: right;">
+            <div class="footer__copyright">
                 <p>Copyright 2010. Studio VIVROCKS. All rights reserved.</p>
             </div>
         </footer>
+
+
+        <script>
+
+        function showHideMenu(){
+            var topMenu = document.getElementById('topMenu');
+
+            var menuDisplay = topMenu.currentStyle ? topMenu.currentStyle.display : getComputedStyle(topMenu, null).display;
+
+            if (menuDisplay == 'block') {
+                topMenu.style.display = "none";
+            } else if (menuDisplay == 'none') {
+                topMenu.style.display = "block";
+            }
+        }
+
+        function displayMenuOnResize(){
+            var topMenu = document.getElementById('topMenu');
+
+            if (window.innerWidth >= '906' ) {
+                topMenu.style = '';
+            }
+        }
+
+        window.onresize = displayMenuOnResize;
+
+        </script>
+
 
 
     </body>

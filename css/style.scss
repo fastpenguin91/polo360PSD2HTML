@@ -1,3 +1,10 @@
+/*************/
+/* $Setup */
+/*************/
+
+
+
+
 body {
     font-size: 16px;
 }
@@ -7,6 +14,28 @@ body {
     display: block;
     height: 0;
     clear: both;
+}
+
+
+
+
+
+/*************/
+/* $Navigation */
+/*************/
+
+
+
+/* Not sure where to put logo */
+
+.logo {
+    background: #ffffff;
+    display: inline-block;
+    padding: 15px;
+}
+
+.logo--primary {
+    float: left;
 }
 
 .nav-container {
@@ -26,9 +55,9 @@ body {
     height: 109px;
 }
 
-.parent-content-block {
-    margin-left: 10%;
-    margin-top: 15px;
+.primary-nav--content {
+    border-left: 2px dashed black;
+    padding-left: 8px;
 }
 
 .listItem {
@@ -36,146 +65,121 @@ body {
     vertical-align: middle;
 }
 
-.logo {
-    background: #ffffff;
-    display: inline-block;
-    padding: 15px;
+
+
+
+
+
+/*************/
+/* $Containers */
+/*************/
+
+
+
+
+.parent-block {
+    margin-left: 10%;
+    margin-top: 15px;
 }
 
-.logo--primary {
-    float: left;
-}
-
-.primary-nav--content {
-    border-left: 2px dashed black;
-    padding-left: 8px;
-}
-
-.primaryHeading {
-    text-align: center;
-}
-
-.primaryHeading__text {
-    font-weight: bold;
-    font-size: 2em;
-}
-
-
-.bannerArea {
-    background: url(../assets/glowgradient.png) no-repeat;
-    height: 350px;
-    margin-bottom: 10px;
-    float: left;
-    position: relative;
-    width: 100%;
-}
-
-.bannerImg {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-}
-
-
-.content-block {
+.block {
     width: 27%;
     margin-right: 3%;
     vertical-align: top;
     display: inline-block;
 }
 
-.content-block__title {
-    color: #11719e;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-.content-block2__title {
-    margin-top: 10px;
-    font-size: 1.5em;
+.newsUpdates__container {
+    margin-bottom: 8px;
     padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-.content-block__caption {
-    color: #8c8c8c;
-    margin-bottom: 8px;
-}
-
-.content-block__image {
-    margin-bottom: 8px;
-    width: 100%;
-    height: auto;
-}
-
-.content-block__paragraph {
-    margin-bottom: 8px;
-}
-
-.content-block__btn {
-    padding: 30px 90px;
-    display: inline-block;
-    background: url(../assets/learnMoreBtnwText.png) no-repeat;
-}
-
-
-
-.content-block2__paragraph {
-    margin-bottom: 15px;
+    padding-top: 4px;
 }
 
 .common-border {
     border-bottom: 1px dashed gray;
 }
 
+
+
+
+
+
+/*************/
+/* $Titles */
+/*************/
+
+
+
+
+.block__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.block__title--postThumb {
+    color: #11719e;
+}
+
+.block__title--connect {
+    padding-bottom: 10px;
+}
+
+.connect__title {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+/*************/
+/* $Buttons */
+/*************/
+
+
+
+
+
+.btn-primary {
+    height: 45px;
+    width: 190px;
+    display: inline-block;
+}
+
+.btn--learnMore {
+    background: url(../assets/learnMoreBtnwText.png) no-repeat;
+}
+
+.btn--subscribe {
+    background: url(../assets/subscribeBTN.png) no-repeat;
+}
+
 .subscribe_btn {
     height: 90px;
     width: 190px;
     display: inline-block;
-    background: url(../assets/subscribeBTN.png) no-repeat;
 }
 
-.sendBTN {
-    height: 90px;
-    width: 190px;
-    display: inline-block;
+.btn--send {
     background: url(../assets/sendItBTN.png) no-repeat;
 }
 
-.visitBlogBTN {
-    height: 90px;
-    width: 190px;
-    display: inline-block;
+.btn--visitBlog {
     background: url(../assets/visitBlogBTN2.png) no-repeat;
 }
 
-.content-block__textField {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    border: 1px solid gray;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-}
 
-.content-block2__img {
-    display: inline-block;
-}
 
-.content-block2__paragraph {
-    display: inline-block;
-    width: 80%;
-    vertical-align: top;
-}
 
-.content-block2__div {
-    margin-bottom: 8px;
-    padding-bottom: 10px;
-    padding-top: 4px;
-}
+
+
+/*************/
+/* $Footer */
+/*************/
+
+
+
 
 
 .footerSection {
@@ -196,6 +200,108 @@ body {
     padding-right: 5px;
     border-right: 1px solid #999999;
 }
+
+
+
+
+
+
+/*************/
+/* $Content */
+/*************/
+
+
+
+
+
+.block__paragraph {
+    margin-bottom: 8px;
+}
+
+.newsUpdates__p {
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+
+.newsUpdates__img {
+    display: inline-block;
+}
+
+.postThumb__img {
+    margin-bottom: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.bannerImg {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+
+.bannerArea {
+    background: url(../assets/glowgradient.png) no-repeat;
+    height: 350px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+
+.block__textField {
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.connect__textField {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.block__caption {
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+
+.primaryHeading {
+    text-align: center;
+}
+
+.primaryHeading__text {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
